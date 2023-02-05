@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            margin: 0px;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 40%;
+            /* padding: 5px; */
+            /* font-size: x-large; */
+
+        }
+
+        .rmv-brd{
+            border: none;
+            width: 80%;
+        }
+
+       .displayDiv{
+        border: 1px solid black;
+        width: 50%;
+       }
+
+       .result{
+           border: 1px solid black;
+           width: 50%;
+           margin: 0px;
+           font-size: x-large;
+       }
+
+       .btns{
+           border-radius: 10px;
+           border: none;
+           font-size: large;
+           margin-right: 15px;
+       }
+
+       .btn-radius{
+        border-radius: 10px;
+           border: none;
+       }
+
+       .btns:hover{
+           cursor: pointer;
+       }
+
+       .first-content{
+           display: inline-block;
+           border: 1px solid black;
+           width: 100%;
+          
+       }
+
+    
+
+.single-line{
+    display: inline-block;
+    border: 2px solid red;
+}
+
+.right{
+    float: right;
+}
+
+.data{
+    display: inline-block;
+    border: 1px solid green;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <script>
+
+        function add(){
+            var vals;
+            if(document.getElementById('inputdata').value.length===0){
+                alert("its empty");
+                return false;
+            }
+
+            document.getElementById('display').style.display='visible'
+            document.getElementById('display2').style.display='visible'
+
+           var res= document.getElementById('inputdata').value;
+      
+           var secondVal = document.getElementById('display2').innerHTML;
+           document.getElementById('display').innerHTML = secondVal;
+      
+           document.getElementById('display2').innerHTML = res;
+      
+
+
+        }
+
+
+        function disbl(btn){
+
+            if(btn === 'btn1'){
+                document.getElementById('display').style.display='none'
+               
+            }
+            
+            if (btn == 'btn2'){
+                document.getElementById('display2').style.display='none'
+            }
+           
+        }
+    </script>
+
+
+<div class="result">
+    <div style="background-color: azure;"><span > Add Values:</span></div>
+    
+    <div  class="data" >   
+            <span id="display" style="display: visible;">Pushups!</span>
+            <span class="right"> <button class="btns" id="first-button" onclick="disbl('btn1')">x</button> </span> <br> <br>
+
+            <span id="display2" style="display: visible;">Get Money!</span> 
+            <span class="right"> <button class="btns" id="first-button" onclick="disbl('btn2')">x</button> </span>
+    </div>
+
+  
+</div> <br>
+
+
+ <div class="container">
+   
+     <button class="btn-radius" onclick="add()" id="btns" >Add</button>
+     <input class="rmv-brd" type="text" id="inputdata">
+    
+ </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+   
+    <body>
+  
+      
+      <label>Enter First Num </label>
+      <input type="text" id="num1" ><br>
+      <label>Enter Second Num </label>
+      <input type="text" id="num2" ><br>
+
+      <input type="button" value="click" onclick="adds()" >
+
+      <p id="add"></p>
+        
+
+      <script>  
+        function adds(){  
+ 
+          var num1=document.getElementById("num1").value;
+          var num2=document.getElementById("num2").value;
+            var sum = num1+num2;
+            
+          //  var sum = parseInt(first) + parseInt(second);
+            alert(sum);
+            document.write(sum);
+            document.getElementById("add").innerHTML = sum;
+
+      }
+        
+        </script> 
+    
+
+    </body>
+
+</html>

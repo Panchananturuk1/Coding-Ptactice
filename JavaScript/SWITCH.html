@@ -1,0 +1,50 @@
+<html>
+<head></head>
+
+
+<body>
+
+
+    <label>Enter First Num </label>
+    <input type="text" id="num1" name="first" ><br>
+    
+    <input type="button" value="add" onclick="adds()" >
+
+    <p id="demo">HEY</p>
+
+    <script>  
+        // var grade='B';  
+        function adds(){
+
+        
+        var grade= document.getElementById("num1").value;  
+        var result;  
+        switch(grade){  
+        case 'A':  
+        result="A Grade";  
+        break;  
+        case 'B':  
+        result="B Grade";  
+        break;  
+        case 'C':  
+        result="C Grade";  
+        break;  
+        default:  
+        result="No Grade";  
+        }  
+
+    
+      
+
+        document.getElementById("demo").innerHTML= result;
+       
+
+    }
+        </script>  
+
+
+
+</body>
+
+
+</html>

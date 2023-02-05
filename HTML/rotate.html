@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.scal{
+    margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(0.5);
+}
+div#myDiv {
+  transform: rotate(20deg);
+}
+.scaly{margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(3);}
+  .skewx{
+    margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+    /* transform: skewX(20deg); */
+    transform: skewY(20deg);
+    transform: skew(20deg, 10deg);
+  }
+  .mat {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+</div>
+<p class="scal">The scaleX() method increases or decreases the width of an element.</p>
+<p class="scaly">The scaleY() method increases or decreases the height of an element.</p>
+<p class="skewx">The skewX() method skews an element along the X-axis by the given angle.</p>
+<section class="mat"> 
+    <p>the matrix combines all the transform method, matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
+    
+</section>
+</body>
+</html>

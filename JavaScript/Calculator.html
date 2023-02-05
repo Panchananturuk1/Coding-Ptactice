@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: inline-block;
+            border: 5px solid black;
+            border-radius: 10px;
+            width: 20%;
+            display: inline-block;
+            /* position: auto; */
+            overflow: hidden;
+
+            /* display: flex;
+            flex-flow: column wrap;
+            overflow: hidden; */
+        }
+
+      
+
+       .result{
+           border: 1px solid black;
+           width: 50%;
+       }
+       .screen{
+           border: 1px solid red;
+           background-color: red;
+           border-radius: 10px;
+           width: 96%;
+           height: 60px;
+           padding: 5px;
+           overflow: hidden;
+           text-align: right;
+           display: inline-block;
+           font-size: x-large;
+       }
+
+       .buttons{
+           width: 100%;
+           border: 2px solid green;
+       }
+
+        .btn-radius{
+            border-radius: 100%;
+            margin: 15px;
+            padding: 15px;
+            border: none;
+            font-size: large;
+       }
+
+       .btn-radius:hover{
+           background-color: green;
+           cursor: pointer;
+       }
+       .red{
+           background-color: red;
+       }
+
+
+       .buttons2{
+          
+           text-align: center;
+           font-size: xx-large;
+       }
+
+       .buttons2 span{
+           margin: 15px;
+           padding: 5px;
+           border: 1px solid black;
+           border-radius:100%;
+           overflow: none;
+           display: inline-block;
+       }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        function getVal(data){
+
+        //    var Nines =  document.getElementById('nine').innerHTML = 9;
+        //    document.getElementById('ni').innerHTML = Nines;
+
+            // var eights = document.getElementById('eight').innerHTML = 8;
+            // document.getElementById('ei').innerHTML = eights;
+
+            // document.getElementById('seven').innerHTML = 7;
+            // document.getElementById('six').innerHTML = 6;
+
+            // var val;
+
+
+
+            if(data === 9){
+                document.getElementById('display').innerHTML = 9;
+                
+            }
+
+            if(data === 8){
+                document.getElementById('display').innerHTML = 8;
+            }
+
+            if(data === 7){
+               document.getElementById('display').innerHTML = 7;
+            }
+            
+
+            if(data === '+'){
+                document.getElementById('display').innerHTML = '+';
+            }
+
+            if(data === 6){
+                document.getElementById('display').innerHTML = 6;
+            }
+
+            if(data === 5){
+                document.getElementById('display').innerHTML = 5;
+            }
+
+            if(data === 4){
+                document.getElementById('display').innerHTML = 4;
+            }
+
+            if(data === '-'){
+                document.getElementById('display').innerHTML = '-';
+            }
+
+
+
+            var getVal = [];
+
+        }
+    </script>
+
+
+<div class="container">
+
+    <div class="screen">
+        <p id="display"></p>
+        <p id="ni"></p>
+        <p id="ei"></p>
+        <p id="se"></p>
+        <p id="si"></p>
+        <p id="fi"></p>
+        <p id="fo"></p>
+        <p id="th"></p>
+        <p id="tw"></p>
+    </div>
+
+    <div class="buttons" id="btn">
+        <button class="btn-radius" id="nine" onclick="getVal(9)">9</button>
+        <button class="btn-radius" id="eight" onclick="getVal(8)">8</button>
+        <button class="btn-radius" id="seven" onclick="getVal(7)">7</button>
+        <button class="btn-radius" id="+" onclick="getVal('+')">+</button> <br>
+        <button class="btn-radius" id="six" onclick="getVal(6)">6</button>
+        <button class="btn-radius" id="five" onclick="getVal(5)">5</button>
+        <button class="btn-radius" id="four" onclick="getVal(4)">4</button> 
+        <button class="btn-radius" id="-" onclick="getVal('-')">-</button> <br>
+        <button class="btn-radius">3</button>
+        <button class="btn-radius">2</button>
+        <button class="btn-radius">1</button>
+        <button class="btn-radius">*</button> <br>
+        <button class="btn-radius">0</button>
+        <button class="btn-radius">.</button>
+        <button class="btn-radius">/</button>
+        <button class="btn-radius red">=</button>
+    </div>
+
+</div>
+
+
+
+
+
+    
+</body>
+</html>
